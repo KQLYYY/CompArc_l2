@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+	<h1 class="jumbotron text-center">Themes</h1>
+	<ul class="list-group">
+		{% for theme in Themes %}
+			<li class="list-group-item"><a href="theme/{{theme}}">{{theme}}</a></li>
+		{% endfor %}
+	</ul>
+{% endblock %}

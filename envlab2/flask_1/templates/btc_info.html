@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+	<h1>{{id}}</h1>
+	<table class="table">
+		{% for key, value in dictt %}
+		   <tr>
+		        <th> <a href='/{{id}}/user/{{key}}'>{{ key }}</a> </th>
+		        <td> {{ value }} </td>
+		   </tr>
+		{% endfor %}
+	</table>
+{% endblock %}
